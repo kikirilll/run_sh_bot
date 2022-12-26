@@ -10,7 +10,7 @@ I decided to use telegram bot commands to run scripts on servers and get results
 I started with creating my Telegram bot. Don't want to describe a lot here, you could you one of thousands of tutorials online.
 As a result, you would need a `TOKEN` and your `CHATID`.<br/>💡Note: There is no such entity as a 'private bot'. Everyone will be able to find your bot and start using it. So, there're at least 2 solutions how to prevent someone else use your bot and run commands:
 1. Create a group chat with you and your bot and use that chatID to send bot messages there.
-2. Use `CHATID` of your and bit private chat (I prefer this option).
+2. Use `CHATID` of your and bot private chat (I prefer this option).
 
 ## Server side
 Keep server updated:
@@ -18,7 +18,7 @@ Keep server updated:
 $ sudo apt update
 ```
 
-The bot will be written in Python, and some packages would be needed. First of all, instal pip:
+I chose Python to write the bot, so some packages would be needed. First of all, instal pip:
 ```
 $ sudo apt install python3-pip
 ```
@@ -54,5 +54,5 @@ kill processID
 ```
 
 ## Notes
-1. Yes, it's not secure to have a password inside the code (bad practice), but I needed a fast solution, so it was fine for me. Password could be stored in another file and be linked in the code.
+1. Yes, it's not secure to have a password inside the code (really bad practice), but I needed a fast solution, so it was fine for me. Password could be stored in another file and be linked in the code.
 2. In case server would be down, bot won't work and command won't be executed (yeah, obvious). Probably it's better to have bot to be set up on another server. But again, I just needed a fast solution and I didn't care about such things.
